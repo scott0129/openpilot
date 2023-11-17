@@ -1587,6 +1587,17 @@ FW_VERSIONS = {
       b'\xf1\x00NX4__               1.01 1.00 99110-N9100         ',
     ],
   },
+  CAR.TUCSON_PHEV: {
+    (Ecu.hvac, 0x7b3, None): [
+      b"\xf1\x00NX4   97255-P0231CONTROL ASS'Y-DATC  1.01 NX4PHEV ATC 0.7 1.00",
+    ],
+    (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\x00NX4 FR_CMR AT USA LHD 1.00 1.00 99211-N9260 14Y',
+    ],
+    (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00NX4__               1.00 1.01 99110-N9000         ',
+    ],
+  },
   CAR.SANTA_CRUZ_1ST_GEN: {
     (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\x00NX4 FR_CMR AT USA LHD 1.00 1.00 99211-CW000 14M',
