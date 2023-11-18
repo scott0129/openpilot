@@ -170,8 +170,10 @@ class CarInterface(CarInterfaceBase):
       ret.tireStiffnessFactor = 0.385
     elif candidate == CAR.TUCSON_4TH_GEN:
       ret.mass = 1630.  # average
+    elif candidate == CAR.TUCSON_HYBRID_4TH_GEN:
+      ret.mass = 4115. * CV.LB_TO_KG
       ret.wheelbase = 2.756
-      ret.steerRatio = 16.
+      ret.steerRatio = 13.7 # From Hyundai product guide https://www.hyundainews.com/assets/documents/original/56243-2024TucsonSpecs061223.pdf
       ret.tireStiffnessFactor = 0.385
     elif candidate == CAR.TUCSON_PHEV:
       ret.mass = 4115. * CV.LB_TO_KG
